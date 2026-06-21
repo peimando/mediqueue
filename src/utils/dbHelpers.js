@@ -14,7 +14,7 @@ function buildUpdate(allowedFields, body) {
 }
 
 async function updateEntity(pool, table, allowedFields, id, body, extra = {}) {
-  const { updates, values, idx } = buildUpdate(allowedFields, body);
+  let { updates, values, idx } = buildUpdate(allowedFields, body);
 
   if (!updates.length) {
     const err = new Error('Sin cambios');
