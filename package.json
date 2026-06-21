@@ -12,7 +12,8 @@
     "test:integration": "jest --testPathPattern=tests/integration --forceExit --runInBand",
     "test:all": "jest --forceExit --runInBand",
     "test:coverage": "jest --coverage --forceExit",
-    "lint": "eslint . --ext .js,.jsx"
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "eslint . --ext .js,.jsx --fix"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
