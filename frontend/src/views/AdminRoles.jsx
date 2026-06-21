@@ -10,7 +10,7 @@ export default function AdminRoles({ toast }) {
   const [modal, setModal] = useState(null);
   const [formValues, setFormVals] = useState({});
   const { is, wrap } = useLoading();
-  const { confirm, state: confirmState, ok: confirmOk, nok: confirmNok } = useConfirm();
+  const { state: confirmState, ok: confirmOk, nok: confirmNok } = useConfirm();
 
   const load = useCallback(async () => {
     setLoading(true);

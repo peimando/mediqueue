@@ -1,5 +1,5 @@
 const pool = require('../database/pool');
-const { AppError, Errors } = require('../errors/AppError');
+const { Errors } = require('../errors/AppError');
 const cfg = require('../config/loader');
 const QueueService = require('../services/queueService');
 

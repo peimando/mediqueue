@@ -1,5 +1,6 @@
 // src/services/queueService.js — Transacciones + SKIP LOCKED
-const { AppError, Errors } = require('../errors/AppError');
+const { Errors } = require('../errors/AppError');
+const logger = require('../config/logger');
 
 class QueueService {
   constructor(pgPool, io, cfg) {
@@ -102,7 +103,7 @@ class QueueService {
         const smsBody = this.cfg.renderSMS('your_turn', {
           ticket: patient.ticket_code, box: boxLabel,
         });
-        if (smsBody) console.log(`[SMS] → ${patient.phone}: ${smsBody}`);
+        if (smsBody) logger.info(`[SMS] → ${patient.phone}: ${smsBody}`);
       }
 
       return { patient, box };

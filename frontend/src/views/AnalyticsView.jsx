@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { apiFetch } from "../hooks/useApi";
 import { PageSkeleton } from "../components/Spinner";
 
-export default function AnalyticsView({ config, toast, setView, logout }) {
+export default function AnalyticsView({ config, setView, logout }) {
   const [data, setData]         = useState(null);
   const [loading, setLoading]   = useState(true);
   const [error, setError]       = useState(null);

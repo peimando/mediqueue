@@ -1,5 +1,4 @@
 const jwt = require('jsonwebtoken');
-const cfg = require('../config/loader');
 
 function registerSocketHandlers(io) {
   io.use((socket, next) => {

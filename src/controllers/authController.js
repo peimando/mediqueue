@@ -2,7 +2,6 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const pool = require('../database/pool');
 const { Errors } = require('../errors/AppError');
-const cfg = require('../config/loader');
 
 async function login(req, res, next) {
   try {

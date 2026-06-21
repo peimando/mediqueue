@@ -1,6 +1,6 @@
 const pool = require('../database/pool');
 const jwt = require('jsonwebtoken');
-const { AppError, Errors } = require('../errors/AppError');
+const { Errors } = require('../errors/AppError');
 const cfg = require('../config/loader');
 const logger = require('../config/logger');
 const QueueService = require('../services/queueService');

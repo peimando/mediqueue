@@ -31,7 +31,7 @@ let _logger = { error: () => {} };
 const setLogger = (logger) => { _logger = logger; };
 
 // Middleware global de errores
-const errorHandler = (err, req, res, next) => {
+const errorHandler = (err, req, res, _next) => {
   const status  = err.status  || 500;
   const code    = err.code    || 'INTERNAL_ERROR';
   const message = status < 500 ? err.message : 'Error interno del servidor';
