@@ -1,7 +1,7 @@
 # 🏥 MediQueue — Sistema de Gestión de Colas Hospitalarias
 
 Sistema completo de gestión de colas para entornos hospitalarios con cartelería digital.
-![CI](https://github.com/tu-usuario/mediqueue/actions/workflows/ci.yml/badge.svg)
+[![CI - MediQueue](https://github.com/peimando/mediqueue/actions/workflows/ci.yml/badge.svg)](https://github.com/peimando/mediqueue/actions/workflows/ci.yml)
 ## ✨ Características
 
 | Módulo | Descripción |
