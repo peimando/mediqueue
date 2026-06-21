@@ -19,7 +19,7 @@ Sistema completo de gestión de colas para entornos hospitalarios con priorizaci
 ### Opción A — Docker (recomendado)
 
 ```bash
-git clone https://github.com/tu-usuario/mediqueue.git
+git clone https://github.com/peimando/mediqueue.git
 cd mediqueue
 cp .env.example .env        # editar JWT_SECRET mínimo
 docker-compose up -d        # levanta app + postgres + redis
